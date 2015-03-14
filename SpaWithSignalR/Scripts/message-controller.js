@@ -4,7 +4,7 @@ angular.module('messageApp', [])
         $scope.send = function (message) {
             $http.post("/api/messages", message)
                 .success(function (data, status, headers, config) {
-                     $scope.message.Post = $scope.message.Name = '';
+                     $scope.message.Post = '';
                 });
         };
     });
